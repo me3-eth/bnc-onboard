@@ -1,15 +1,21 @@
-# Onboard
+Removed unused wallets in build
+
+---
+
+# @me3/bnc-onboard
 
 JavaScript library to easily onboard users to ethereum apps by enabling wallet selection, connection, wallet checks and real time state updates.
 
 ## Install
 
-`npm install bnc-onboard`
+```sh
+npm install @me3/bnc-onboard
+```
 
 ## Quick Start
 
 ```javascript
-import Onboard from 'bnc-onboard'
+import Onboard from '@me3/bnc-onboard'
 import Web3 from 'web3'
 
 // set a variable to store instantiated web3
