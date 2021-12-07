@@ -239,7 +239,7 @@ function createWalletStateSliceStore(options: {
   return {
     subscribe,
     reset: () => {
-      set(undefined)
+      set(null)
     },
     get: () => currentState,
     setStateSyncer: (stateSyncer: StateSyncer) => {
@@ -266,7 +266,7 @@ function createWalletStateSliceStore(options: {
           onChange(newVal => {
             resolve(undefined)
             if (newVal || currentState !== initialState) {
-              set(newVal)
+              set(newVal || null)
             }
           })
         })
